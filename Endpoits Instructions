@@ -1,0 +1,46 @@
+Start the app with command: npm start
+
+Post request to SignIn with the hardcoded User to get token
+Send body with Json request
+{
+  "username": "Test",
+  "password": "TestPass"
+}
+http://localhost:4000/api/signin
+
+
+Get request for getting all products:
+http://localhost:4000/api/products
+
+Post request for creating a product:
+Set the headers in format Authorization: Bearer token
+{
+  "name": "Computer",
+  "category": "Hardware",
+  "price": 2500
+}
+http://localhost:4000/api/products
+
+Put request for updating a product
+Set the headers in format Authorization: Bearer token
+http://localhost:4000/api/products/id
+
+Delete request for updating a product
+Set the headers in format Authorization: Bearer token
+http://localhost:4000/api/products/id
+
+Get request for getting all orders:
+http://localhost:4000/api/orders
+
+Post request for creating a product:
+Set the headers in format Authorization: Bearer token
+http://localhost:4000/api/orders
+
+Patch request for updating the status of an order
+Set the headers in format Authorization: Bearer token
+{
+  "status": "Processing"
+}
+http://localhost:4000/api/orders/id
+
+
